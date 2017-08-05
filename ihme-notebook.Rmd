@@ -1,0 +1,270 @@
+---
+title: "Social Networks and Mental Diseases"
+author: "Simone Di Cicco"
+date: "8/4/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+title: "Social Networks and Metal Diseases"
+output: html_notebook
+---
+
+## Codebook
+
+### Introduction
+
+### Dataset source
+
+The dataset has been gathered from IHME (Institute for Health Metrics and Evaluation). This organization is reachable by the website http://www.healthdata.org. They provides absolutely open and filterable data. The tool is available at the following link:
+- http://ghdx.healthdata.org/gbd-results-tool
+
+The dataset I extracted is available at the following link. The status of the dataset you are downloading is intact. You will manage and/or explore the dataset before any cleaning/processing:
+- Link at the dataset.
+
+### R Application
+
+Also the R application I coded to gain the result is absolutely open and available on GitHub:
+- https://github.com/ukaoskid/ihme-social-networks
+
+### Dataset field meaning
+
+#### Location (id, name)
+- 10, Cambodia
+- 101, Canada
+- 102, United States
+- 105, Antigua and Barbuda
+- 106, The Bahamas
+- 107, Barbados
+- 108, Belize
+- 109, Cuba
+- 11, Indonesia
+- 110, Dominica
+- 111, Dominican Republic
+- 112, Grenada
+- 113, Guyana
+- 114, Haiti
+- 115, Jamaica
+- 116, Saint Lucia
+- 117, Saint Vincent and the Grenadines
+- 118, Suriname
+- 119, Trinidad and Tobago
+- 12, Laos
+- 121, Bolivia
+- 122, Ecuador
+- 123, Peru
+- 125, Colombia
+- 126, Costa Rica
+- 127, El Salvador
+- 128, Guatemala
+- 129, Honduras
+- 13, Malaysia
+- 130, Mexico
+- 131, Nicaragua
+- 132, Panama
+- 133, Venezuela
+- 135, Brazil
+- 136, Paraguay
+- 139, Algeria
+- 14, Maldives
+- 140, Bahrain
+- 141, Egypt
+- 142, Iran
+- 143, Iraq
+- 144, Jordan
+- 145, Kuwait
+- 146, Lebanon
+- 147, Libya
+- 148, Morocco
+- 149, Palestine
+- 15, Myanmar
+- 150, Oman
+- 151, Qatar
+- 152, Saudi Arabia
+- 153, Syria
+- 154, Tunisia
+- 155, Turkey
+- 156, United Arab Emirates
+- 157, Yemen
+- 16, Philippines
+- 160, Afghanistan
+- 161, Bangladesh
+- 162, Bhutan
+- 163, India
+- 164, Nepal
+- 165, Pakistan
+- 168, Angola
+- 169, Central African Republic
+- 17, Sri Lanka
+- 170, Congo
+- 171, Democratic Republic of the Congo
+- 172, Equatorial Guinea
+- 173, Gabon
+- 175, Burundi
+- 176, Comoros
+- 177, Djibouti
+- 178, Eritrea
+- 179, Ethiopia
+- 18, Thailand
+- 180, Kenya
+- 181, Madagascar
+- 182, Malawi
+- 183, Mauritius
+- 184, Mozambique
+- 185, Rwanda
+- 186, Seychelles
+- 187, Somalia
+- 189, Tanzania
+- 19, Timor-Leste
+- 190, Uganda
+- 191, Zambia
+- 193, Botswana
+- 194, Lesotho
+- 195, Namibia
+- 196, South Africa
+- 197, Swaziland
+- 198, Zimbabwe
+- 20, Vietnam
+- 200, Benin
+- 201, Burkina Faso
+- 202, Cameroon
+- 203, Cape Verde
+- 204, Chad
+- 205, Cote d'Ivoire
+- 206, The Gambia
+- 207, Ghana
+- 208, Guinea
+- 209, Guinea-Bissau
+- 210, Liberia
+- 211, Mali
+- 212, Mauritania
+- 213, Niger
+- 214, Nigeria
+- 215, Sao Tome and Principe
+- 216, Senegal
+- 217, Sierra Leone
+- 218, Togo
+- 22, Fiji
+- 23, Kiribati
+- 24, Marshall Islands
+- 25, Federated States of Micronesia
+- 26, Papua New Guinea
+- 27, Samoa
+- 28, Solomon Islands
+- 29, Tonga
+- 298, American Samoa
+- 30, Vanuatu
+- 305, Bermuda
+- 33, Armenia
+- 34, Azerbaijan
+- 349, Greenland
+- 35, Georgia
+- 351, Guam
+- 36, Kazakhstan
+- 37, Kyrgyzstan
+- 376, Northern Mariana Islands
+- 38, Mongolia
+- 385, Puerto Rico
+- 39, Tajikistan
+- 40, Turkmenistan
+- 41, Uzbekistan
+- 422, Virgin Islands, U.S.
+- 43, Albania
+- 433, Northern Ireland
+- 434, Scotland
+- 435, South Sudan
+- 44, Bosnia and Herzegovina
+- 45, Bulgaria
+- 46, Croatia
+- 4636, Wales
+- 47, Czech Republic
+- 4749, England
+- 48, Hungary
+- 49, Macedonia
+- 50, Montenegro
+- 51, Poland
+- 52, Romania
+- 522, Sudan
+- 53, Serbia
+- 54, Slovakia
+- 55, Slovenia
+- 57, Belarus
+- 58, Estonia
+- 59, Latvia
+- 6, China
+- 60, Lithuania
+- 61, Moldova
+- 62, Russia
+- 63, Ukraine
+- 66, Brunei
+- 67, Japan
+- 68, South Korea
+- 69, Singapore
+- 7, North Korea
+- 71, Australia
+- 72, New Zealand
+- 74, Andorra
+- 75, Austria
+- 76, Belgium
+- 77, Cyprus
+- 78, Denmark
+- 79, Finland
+- 8, Taiwan
+- 80, France
+- 81, Germany
+- 82, Greece
+- 83, Iceland
+- 84, Ireland
+- 85, Israel
+- 86, Italy
+- 87, Luxembourg
+- 88, Malta
+- 89, Netherlands
+- 90, Norway
+- 91, Portugal
+- 92, Spain
+- 93, Sweden
+- 94, Switzerland
+- 97, Argentina
+- 98, Chile
+- 99, Uruguay
+
+#### Measures (id, name, meaning):
+
+- 6, Incident, Number of new cases in the population at a given time
+
+#### Metric (id, name):
+- 1, Number
+- 2, Percentage
+- 3, Rate
+
+#### Diseases (id, name):
+
+- 559, Schizophrenia
+- 560, Alcohol use disorders
+- 562, Opioid use disorders
+- 563, Cocaine use disorders
+- 564, Amphetamine use disorders
+- 565, Cannabis use disorders
+- 568, Major depressive disorder
+- 569, Dysthymia
+- 570, Bipolar disorder
+- 571, Anxiety disorders
+- 576, Autism
+- 577, Asperger syndrome and other autistic spectrum disorders
+- 578, Attention-deficit/hyperactivity disorder
+- 579, Conduct disorder
+- 582, Idiopathic developmental intellectual disability
+- 585, Other mental and substance use disorders
+- 566, Other drug use disorders
+
+### Plots
+
+```{r, echo = FALSE}
+
+```
+
