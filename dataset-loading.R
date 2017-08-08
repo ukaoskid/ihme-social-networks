@@ -1,6 +1,6 @@
 # Loading IHME dataset.
 
-dataset_files <- list.files("./original-dataset/", full.names = TRUE)
+dataset_files <- list.files("./original-dataset", full.names = TRUE)
 if (!exists("ihme")) {
   ihme <<- data.frame()
 }
@@ -14,3 +14,4 @@ for (sub_dataset in dataset_files) {
 }
 
 remove(sub_ihme)
+remove(sub_dataset)

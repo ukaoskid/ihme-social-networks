@@ -233,9 +233,32 @@ Also the R application I coded to gain the result is absolutely open and availab
 - 98, Chile
 - 99, Uruguay
 
+#### Ages
+
+- 7, 10 to 14
+- 8, 15 to 19
+- 9, 20 to 24
+- 10, 25 to 29
+- 11, 30 to 34
+- 12, 35 to 39
+- 14, 45 to 49
+- 15, 50 to 54 
+- 16, 55 to 59
+- 17, 60 to 64
+- 18, 65 to 69
+- 13, 40 to 44
+- 26, 70+ years
+- 169, 10 to 54
+
 #### Measures (id, name, meaning):
 
-- 6, Incident, Number of new cases in the population at a given time
+- 1, Deaths
+- 2, DALYs (Disability-Adjusted Life Years)
+- 3, YLDs (Years Lived with Disability)
+- 4, YLLs (Years of Life Lost)
+- 5, Prevalence
+- 6, Incidence, Number of new cases in the population at a given time
+- 22, Chronic Prevalence
 
 #### Metric (id, name):
 - 1, Number
@@ -260,7 +283,7 @@ Also the R application I coded to gain the result is absolutely open and availab
 - 579, Conduct disorder
 - 582, Idiopathic developmental intellectual disability
 - 585, Other mental and substance use disorders
-- 566, Other drug use disorders
+- 566, Other drug use disorders [NOT-INCLUDED]
 
 ### Plots
 
